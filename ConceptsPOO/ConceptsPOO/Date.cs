@@ -82,8 +82,11 @@ namespace ConceptsPOO
 
         public override string ToString()
         {
-            //return _year + "/" + _month + "/" + _day;
-            return $" {_year}/{_month:00}/{_day:00}";
+            //de la manera rustica
+            //return _year + "/" + _month + "/" + "/" + _day; 
+
+            //con interpolación de string, se pone 00 para que imprima 0 presediendo a los mese y dias de un digito
+            return $"{_year}/{_month:00}/{_day:00}";
         }
     }
 }
